@@ -1,0 +1,31 @@
+---
+title: Contato
+---
+
+.container
+	.row
+		.span6
+			%form.form-horizontal
+				.control-group
+					%label.control-label{:for => "inputNome"} Nome
+					.controls
+						%input#inputNome{:placeholder => "Nome", :type => "text"}
+				.control-group
+					%label.control-label{:for => "inputEmail"} E-mail
+					.controls
+						%input#inputEmail{:placeholder => "E-mail", :type => "text"}
+				.control-group
+					%label.control-label{:for => "inputAssunto"} Assunto
+					.controls
+						%input#inputAssunto{:placeholder => "Assunto", :type => "text"}
+				.control-group
+					%label.control-label{:for => "inputMensagem"} Mensagem
+					.controls
+						%textarea#inputMensagem{:placeholder => "Mensagem", :rows => "3"}
+				.control-group
+					.controls
+						%button.btn{:type => "submit"} 
+							%i.icon-envelope-alt 
+							Enviar
+		.span6
+			%iframe{:frameborder => "0", :height => "350", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/maps?q=Avenida+Antônio+Marques+Figueira,+1705,+Suzano+-+São+Paulo,+Brazil&hl=en&ie=UTF8&ll=-23.549648,-46.307309&spn=0.010543,0.015128&sll=-23.550724,-46.307213&sspn=0.010543,0.015128&hnear=Av.+Antônio+Marques+Figueira,+1705+-+Vila+Figueira,+Suzano+-+São+Paulo,+08676-420,+Brazil&t=m&z=16&output=embed", :width => "460"}

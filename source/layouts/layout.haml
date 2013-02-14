@@ -1,0 +1,34 @@
+!!!
+%html{:lang => "en"}
+    %head
+        %meta{:charset => "utf-8"}/
+        / Always force latest IE rendering engine or request Chrome Frame
+        %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+        / Use title if it's in the page YAML frontmatter
+        %title= data.page.title || "Bruma Ponce Interiores"
+        = stylesheet_link_tag "all"
+    %body
+        #wrap
+            .container.header
+                %h1 Bruma Ponce
+                %ul.nav.nav-list
+                    %li{is_active('apresentacao.html')}
+                        = link_to "Apresentação", "apresentacao.html"
+                    %li{is_active('servicos.html')}
+                        = link_to "Serviços", "servicos.html"
+                    %li{is_active('portifolio.html')}
+                        = link_to "Portifólio", "portifolio.html"
+                    %li{is_active('contato.html')}
+                        = link_to "Contato", "contato.html"
+            %hr
+            = yield
+            #push
+    %footer
+        .container
+            .row
+                .span3
+                    %i.icon-phone.icon-large
+                    (11) 99906-3640
+                .span5
+                    %i.icon-home.icon-large
+                    Rua Quinze de Novembro, 240 - Suzano - São Paulo

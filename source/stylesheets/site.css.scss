@@ -1,0 +1,72 @@
+// Images
+$header-background-image: url('http://placehold.it/940x290/333/fff');
+$content-background-image: url('http://placehold.it/940x400/333/fff');
+
+// Colors
+$background-color: black;
+$font-color: white;
+$reverse-font-color: black;
+$link-color: white;
+
+body {
+	background-color: $background-color;
+	color: $font-color;
+}
+
+a, a:hover {
+	color: $link-color;
+}
+
+.header {
+	height: 290px;
+	background-image: $header-background-image;
+}
+
+.nav {
+	li {
+		a {
+			text-shadow: none;
+		}
+		a:hover {
+			background-color: transparent;
+		}	
+	}
+	li.inactive {
+		a {
+			color: transparent;
+			text-shadow: 0 0 2px rgba(255,255,255,1);
+		}
+
+		a:hover {
+			color: $font-color;
+			text-shadow: none;
+		}
+	}
+}
+
+
+
+hr {
+	margin: 0px;
+}
+
+.submenu {
+	margin-top: 20px;
+	.span3, .span4 {
+    	text-align: center;
+	}
+}
+
+.content {
+	background-image: $content-background-image;
+	height: 400px;
+}
+
+footer {
+	color: $reverse-font-color;
+	.container {
+		.row {
+			padding-top: 10px;
+		}
+	}
+}
