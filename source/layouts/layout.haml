@@ -10,7 +10,8 @@
     %body
         #wrap
             .container.header
-                %h1 Bruma Ponce
+                %a#logo{:href => "/", :title => "Voltar para a página inicial"}
+                    %img{:alt => "Única Interior Design", :src => "images/logo.png"}/
                 %ul.nav.nav-list
                     %li{is_active('apresentacao.html')}
                         = link_to "Apresentação", "apresentacao.html"
