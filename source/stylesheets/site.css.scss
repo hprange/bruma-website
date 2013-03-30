@@ -28,6 +28,11 @@ body {
 	font-family: Caviar Dreams;
 }
 
+h1 {
+	font-size: 16px;
+	margin-top: 0px;
+}
+
 a, a:hover {
 	color: $link-color;
 }
@@ -38,6 +43,7 @@ a, a:hover {
 }
 
 .nav {
+	padding-left: 109px;
 	li {
 		a {
 			text-shadow: none;
@@ -66,13 +72,16 @@ hr {
 }
 
 .submenu {
-	margin-top: 20px;
 	.span3, .span4 {
-    	text-align: center;
+		text-align: center;
 	}
 }
 
 .content {
+	margin-top: 30px;
+}
+
+.presentation {
 	background-image: $content-background-image;
 	height: 400px;
 }
